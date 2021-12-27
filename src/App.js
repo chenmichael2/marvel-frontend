@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-
-import Home from './components/Home';
-import Movie from './components/Movie'
 import {
   BrowserRouter as Router,
   Route,
   Routes
 } from 'react-router-dom';
+
+import Home from './components/Home';
+// import Movie from './components/Movie';
 
 class App extends Component {
   render() {
@@ -14,7 +14,7 @@ class App extends Component {
       <Router>
         <Routes>
           <Route exact path="/" element={<Home/>} />
-          <Route exact path="/movie" element={<Movie/>} />
+          {/* <Route exact path="/movie" element={<Movie/>} /> */}
         </Routes>
       </Router>
     )
