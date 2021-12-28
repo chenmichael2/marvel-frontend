@@ -73,4 +73,13 @@ html,body {
     color: #147efb;
   }
 
+  .center-picture {
+    text-align: center;
+    width: 1800px;
+    height: 500px;
+    opacity: 0.2;
+  }
 
+  .heading-section {
+    background-color: black;
+  }
