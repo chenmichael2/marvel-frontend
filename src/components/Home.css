@@ -102,14 +102,23 @@ html,body {
     font-size: 25px;
   }
 
+  .movie-portion {
+    background-color: black;
+  }
   .movie-heading {
     text-align: center;
     font-size: 30px;
     padding-top: 25px;
   }
 
+  .movie-section {
+    text-align: center;
+    padding-bottom: 100px;
+
+  }
   .movie-container {
     display: inline-flex;
+    justify-content: center;
     padding: 5px;
     border: solid 5px purple;
     background-color: red;
@@ -117,6 +126,8 @@ html,body {
 
   .movie-card {
     text-align: center;
+    display: inline-block;
+    margin: 10px;
     width: 176px;
     height: 313px;
     background-color: blue;
