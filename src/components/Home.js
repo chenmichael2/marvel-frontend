@@ -95,8 +95,8 @@ class Home extends Component {
                             </div>
                         </div>
                     </div>
+                    <h1 className="movie-heading">Top 5 Movies</h1>
                     <div className="movie-container">
-                        <h1 className="movie-heading">Top 5 Movies</h1>
                         <div className="movie-row">
                             {<TopMovies/>}
                         </div>

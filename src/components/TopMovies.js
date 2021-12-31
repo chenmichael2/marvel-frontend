@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+
 class TopMovies extends Component {
     render() {
         return (
@@ -14,4 +15,4 @@ class TopMovies extends Component {
     }
 }
 
-export default TopMovies
+export default TopMovies;

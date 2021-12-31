@@ -103,10 +103,21 @@ html,body {
   }
 
   .movie-heading {
+    text-align: center;
     font-size: 30px;
+    padding-top: 25px;
   }
 
   .movie-container {
+    display: inline-flex;
+    padding: 5px;
+    border: solid 5px purple;
+    background-color: red;
+  }
+
+  .movie-card {
     text-align: center;
-    padding-top: 25px;
+    width: 176px;
+    height: 313px;
+    background-color: blue;
   }
