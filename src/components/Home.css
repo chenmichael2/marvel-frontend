@@ -101,3 +101,12 @@ html,body {
   .paragraph-text {
     font-size: 25px;
   }
+
+  .movie-heading {
+    font-size: 30px;
+  }
+
+  .movie-container {
+    text-align: center;
+    padding-top: 25px;
+  }

@@ -1,6 +1,18 @@
 import React, { Component } from 'react';
 import './Home.css';
 
+import TopMovies from './TopMovies';
+
+const movie = [
+    {
+        title: '',
+        date: '',
+        year: 20,
+        imageURL: '',
+
+    },
+];
+
 class Home extends Component {
     render() {
         return (
@@ -37,10 +49,15 @@ class Home extends Component {
                             <img className="center-picture" src="https://www.gannett-cdn.com/presto/2021/01/07/USAT/0d87949b-7f95-4318-a7f7-72f2b6893d05-marvel-shows.png"
                                 alt="marvel center picture" />
                             <div className="body-text">
-                                <div>Home</div>
-                                <p className="paragraph-text">This is the home page.</p>
+                                <h1>Marvel</h1>
+                                <p className="paragraph-text">Welcome to Marvel</p>
                             </div>
-
+                        </div>
+                    </div>
+                    <div className="movie-container">
+                        <h1 className="movie-heading">Top 5 Movies</h1>
+                        <div className="movie-row">
+                            {<TopMovies/>}
                         </div>
                     </div>
                 </div>
