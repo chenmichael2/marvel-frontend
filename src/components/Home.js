@@ -55,6 +55,29 @@ const movie = [
 ];
 
 class Home extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            movie: [],
+        };
+    }
+    
+    displayTopMovies() {
+        const displayMovie = this.state.movie.map((movie, idx) => {
+            return <TopMovies
+                key={idx}
+                index={idx}
+                title={movie.title}
+                date={movie.date}
+                year={movie.year}
+                posterURL={movie.posterURL}
+                fullposterURL={movie.fullposterURL}
+                trailerURL={movie.trailerURL}
+            />
+        });
+        return displayMovie;
+    }
+
     render() {
         return (
             <div>
@@ -99,7 +122,9 @@ class Home extends Component {
                         <h1 className="movie-heading">Top 5 Movies</h1>
                         <div className="movie-section">
                             <div className="movie-container">
-                                {<TopMovies />}
+                                <div className="movie-row">
+                                    {this.displayTopMovies()}
+                                </div>
                             </div>
                         </div>
                     </div>
