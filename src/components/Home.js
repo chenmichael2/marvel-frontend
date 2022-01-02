@@ -82,6 +82,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <a className="skip-nav-link" href="#main-content">skip navigation</a>
                 <div className="hero-head">
                     <nav className="navbar">
                         <div className="container">
@@ -100,7 +101,7 @@ class Home extends Component {
                                     <div className="tabs is-right">
                                         <ul>
                                             <li className="is-active"><a>Home</a></li>
-                                            <li><a href="">Movies</a></li>
+                                            <li><a href="/movie">Movies</a></li>
                                             <li><a href="">TV Shows</a></li>
                                             <li><a href="">Characters</a></li>
                                         </ul>
@@ -109,7 +110,7 @@ class Home extends Component {
                             </div>
                         </div>
                     </nav>
-                    <div className="heading-container">
+                    <div id="main-content" className="heading-container">
                         <div className="heading-section">
                             <img className="center-picture" src="https://www.gannett-cdn.com/presto/2021/01/07/USAT/0d87949b-7f95-4318-a7f7-72f2b6893d05-marvel-shows.png"
                                 alt="marvel center picture" />
