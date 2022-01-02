@@ -5,6 +5,7 @@ import TopMovies from './TopMovies';
 
 const movie = [
     {
+        
         title: 'Spider-Man: No Way Home',
         date: 'December 17',
         year: 2021,
@@ -44,14 +45,14 @@ const movie = [
         fullposterURL: 'https://i.dailymail.co.uk/1s/2019/03/25/15/11430430-0-image-a-66_1553526292895.jpg',
         trailerURL: '',
     },
-    {
-        title: '',
-        date: '',
-        year: 20,
-        posterURL: '',
-        fullposterURL: '',
-        trailerURL: '',
-    },
+    // {
+    //     title: '',
+    //     date: '',
+    //     year: 20,
+    //     posterURL: '',
+    //     fullposterURL: '',
+    //     trailerURL: '',
+    // },
 ];
 
 class Home extends Component {
@@ -63,7 +64,7 @@ class Home extends Component {
     }
     
     displayTopMovies() {
-        const displayMovie = this.state.movie.map((movie, idx) => {
+        const displayMovie = movie.map((movie, idx) => {
             return <TopMovies
                 key={idx}
                 index={idx}

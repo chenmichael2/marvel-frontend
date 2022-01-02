@@ -109,6 +109,8 @@ html,body {
     text-align: center;
     font-size: 30px;
     padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
   }
 
   .movie-section {
@@ -120,15 +122,32 @@ html,body {
     display: inline-flex;
     justify-content: center;
     padding: 5px;
-    border: solid 5px purple;
-    background-color: red;
+    background-color: white;
+    align-items: flex-start;
+    border-radius: 10px;
   }
 
   .movie-card {
-    text-align: center;
     display: inline-block;
     margin: 10px;
     width: 176px;
-    height: 313px;
-    background-color: blue;
+    height: 335px;
+
+  }
+  .poster{
+    z-index: 100;
+    width: 176px;
+    height: 261px;
+  }
+  .movie-title{
+    width: 176px;
+    height: 50px;
+    font-size: 12px;
+    color: black;
+    align-items: center;
+  }
+
+  .movie-release{
+    font-size: 12px;
+    color: gray;
   }
