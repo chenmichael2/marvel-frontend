@@ -37,13 +37,13 @@ class Movie extends Component {
                                 alt="marvel center picture" />
                             <div className="body-text">
                                 <h1>Movies</h1>
-                                <p className="paragraph-text">All movies in the MCU.</p>
+                                <p className="paragraph-text">All movies in the MCU</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="movies">
-
+                
                 </div>
                 <footer>
                     <h1>This is not an official Disney website.</h1>
