@@ -45,14 +45,6 @@ const movie = [
         fullposterURL: 'https://i.dailymail.co.uk/1s/2019/03/25/15/11430430-0-image-a-66_1553526292895.jpg',
         trailerURL: '',
     },
-    // {
-    //     title: '',
-    //     date: '',
-    //     year: 20,
-    //     posterURL: '',
-    //     fullposterURL: '',
-    //     trailerURL: '',
-    // },
 ];
 
 class Home extends Component {
