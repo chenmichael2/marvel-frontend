@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import MovieCard from './MovieCard';
 
 const movie = [
     {
-        
         title: 'Spider-Man: No Way Home',
         date: 'December 17',
         year: 2021,
@@ -221,6 +221,27 @@ const movie = [
 ];
 
 class Movie extends Component {
+
+    constructor(props) {
+        super(props);
+    }
+
+    displayAllMovies() {
+        const displayMovie = movie.map((movie, idx) => {
+            return <MovieCard
+                key={idx}
+                index={idx}
+                title={movie.title}
+                date={movie.date}
+                year={movie.year}
+                posterURL={movie.posterURL}
+                fullposterURL={movie.fullposterURL}
+                trailerURL={movie.trailerURL}
+            />
+        });
+        return displayMovie;
+    }
+
     render() {
         return (
             <div>
@@ -263,7 +284,16 @@ class Movie extends Component {
                     </div>
                 </div>
                 <div className="movies">
-                
+                    <h1 className="movie-heading">Movies</h1>
+                    <div className="movie-section">
+                        <div className="movie-container">
+                            <div className="movie-row">
+                                <div>
+                                    {this.displayAllMovies()}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <footer>
                     <h1>This is not an official Disney website.</h1>
